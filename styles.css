@@ -17,8 +17,13 @@ html {
     scroll-behavior: smooth;
     scrollbar-color: var(--primary-color) var(--Darker-bg);
 }
+
 body {    
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    "wdth" 100;
     background-color: var(--Dark-bg);   
     color: var(--light-text);   
     line-height: 1.6;
@@ -110,6 +115,11 @@ section {
     height: 2px;
     background-color: var(--primary-color);
 }
+.section-title p {
+    font-size:20px;
+    color: #6c63ff;
+    
+}
 .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -131,13 +141,18 @@ section {
     display: flex;
     align-items: center;
     padding-top: 5rem;
+    
 }
+
 .hero-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 50px;
 
+  
 }
 .hero-text {
     flex: 1;
@@ -186,21 +201,24 @@ section {
     justify-content: flex-end;
 }
 .hero-image img {
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 400px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 1%;
     border: 3px solid var(--primary-color);
     box-shadow: 0 0 25px rgba(108, 99, 255, 0.5);
     transition: var(--transition);
+    transition: background-image 0.5s ease;
 }
 .hero-image img:hover {
     transform: scale(1.03);
     box-shadow: 0 0 30px rgba(108, 99, 255, 0.5);
+    background-image: image('corvus pfp ver 2.jpg')
 }
+
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;    
 }
 .timeline:before {
@@ -213,7 +231,7 @@ section {
     background-color: var(--border-color);
 }
 .timeline-item {
-    position: relative;
+    position:relative;
     margin-bottom: 3rem;
     padding-left: 50px; 
 }
