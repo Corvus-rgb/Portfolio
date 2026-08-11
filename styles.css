@@ -23,7 +23,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    "wdth" 100;
+    width: 100;
     background-color: var(--Dark-bg);   
     color: var(--light-text);   
     line-height: 1.6;
@@ -94,7 +94,7 @@ header {
    width: 100%;
 }
 section {
-    padding: 4rem 5%;
+    padding: 2rem 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -104,7 +104,8 @@ section {
     text-align: center; 
     position: relative;
     padding-bottom: 1rem;
-}
+    font-family: "Space Grotesk", sans-serif;
+    }
 .section-title:after {
     content: '';
     position: absolute;
@@ -151,6 +152,7 @@ section {
     gap: 3rem;
     border-left: 3px solid var(--primary-color);
     padding-left: 50px;
+    margin-bottom: 1.5rem;
 
   
 }
@@ -208,12 +210,11 @@ section {
     border: 3px solid var(--primary-color);
     box-shadow: 0 0 25px rgba(108, 99, 255, 0.5);
     transition: var(--transition);
-    transition: background-image 0.5s ease;
 }
 .hero-image img:hover {
     transform: scale(1.03);
     box-shadow: 0 0 30px rgba(108, 99, 255, 0.5);
-    background-image: image('corvus pfp ver 2.jpg')
+    
 }
 
 .timeline {
@@ -282,7 +283,7 @@ section {
     padding: .3rem 0.8rem;
     background-color: black;
     border-radius: 20px;
-
+}
 .divider-component {
   align-items: center;
   border: 0;
@@ -292,7 +293,6 @@ section {
   padding: 0;
   position: relative;
   width: 100%;
-}
 }
 .proyects-container {
     display: grid;
@@ -328,7 +328,7 @@ section {
     display: flex;
     flex-direction: column;
 }
-.proyect-info h3 {
+.proyect-info h2 {
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
 }
@@ -338,27 +338,22 @@ section {
     margin-bottom: 1rem;
     flex-grow: 1;
 }
-.proyect-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
-    margin-bottom: 1rem;
+
+.gallery-container {
+    width: 100%;
+    max-width:fit-content;
+    margin:40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
-.proyect-tech span {
-    font-size: .8rem;
-    padding: .2rem .6rem;
-    background-color: black;
-    border-radius: 20px;
+.gallery-container img{
+    height: 100%;
+    align-items: center;
+    border-radius: 5px;
+    transition: var(--transition)
 }
-.proyect-links {
-    display: flex;
-    gap: 1rem;
-}
-.proyect-links a {
-    font-size: 1.1rem;
-    color: var(--gray-text);
-    transition: var(--transition);
-}
-.proyect-links a:hover {
-    color: var(--primary-color);
+.gallery-container img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.5);
 }
