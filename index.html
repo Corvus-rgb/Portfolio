@@ -9,6 +9,8 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
 </style>
    
    <body>
@@ -19,6 +21,7 @@
                 <li><a href="#inicio">inicio</a></li>
                 <li><a href="#experiencia">experiencia</a></li>
                 <li><a href="#proyectos">proyectos</a></li>
+                <li><a href="#servicios">servicios</a></li>
             </ul>
         </nav>
     </header>
@@ -26,9 +29,10 @@
 
         <section id="inicio" class="hero"> 
             <div class="hero-content">
+               
                  <div class="hero-text">
-                 <h1>Corvus Rgb</h1>
-                 <h2>Diseñador y Frontend Developer</h2>
+                 <h1>Amsler Luisina</h1> <span class="hero-subtitle">Diseñador y Frontend Developer</span>
+                 <h2>ALT: CorvusRGB</h2>
                  <p>Soy un Diseñador digital con un perfil multidisciplinado que combina bases del diseño Grafico con metodologia de diseño UX/UI // + Modelado, texturizado e iluminación de assets 3D. Actualmente estoy expandiendo mis capacidades tecnicas en desarrollo Font-end para optimizar la transicion del diseño a codigo, utilizando HTML, CSS y Javascript.</p>
                 <div class="social-links">
                     <a href="https://github.com/CorvusRgb" target="_blank"><i class="fab fa-github"></i></a>
@@ -36,11 +40,72 @@
                     <a href="https://www.linkedin.com/in/corvus-studio/?isSelfProfile=true" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <a href="#contacto" class="btn">contacto</a>
+                <a href="path/to/your/cv.pdf" class="btn" download>Descargar CV</a>
             </div>
                 <div class="hero-image">
-                    <img src="img/Corvuspfp.jpg" alt="profile image">           
+                   <img src="img/crow distortion 1.png" alt="profile image" id="hero-image"
+                    onmouseover="this.src='img/crow distortion 2.png'" 
+                    onmouseout="this.src='img/crow distortion 1.png'"
+                   >
+                   
                 </div>
+                <img src="img/Corvuspfp.jpg" class="img-mobile" alt="Versión Móvil">    
         </section>
+             
+    
+            <div class="section-title">
+             <h2>Servicios</h2>
+             <p>// servicios, herramientas de trabajo y competencias//</p>
+            </div>
+    <section id="servicios" class="servicios">
+        <div class="service-container">
+            <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/Icons/iconos web corvus dialogo.png" alt="icono de servicio 1">
+                    </div>
+                <div class="service-info">
+                      <h2> Front-End dev.</h2>
+                      <p>Desarrollo de sitios e interfaces web dinámicas, adaptables y originales.</p>
+                        <div class="service-tech">
+                          <span>HTML</span>
+                          <span>CSS</span>
+                          <span>JavaScript</span>
+                        </div>
+                </div>
+            </div>
+        </div>  
+        <div class="service-container">
+            <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/Icons/iconos web corvus !.png" alt="icono de servicio 1">
+                    </div>
+                <div class="service-info">
+                      <h2> Diseño Grafico</h2>
+                      <p>Desarrollo de sitios e interfaces web dinámicas, adaptables y originales.</p>
+                        <div class="service-tech">
+                          <span>FIGMA</span>
+                          <span>Affinity Designer</span>
+                          <span>UI/UX</span>
+                        </div>
+                </div>
+            </div>
+        </div>  
+        <div class="service-container">
+            <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/Icons/iconos web corvus word.png" alt="icono de servicio 1">
+                    </div>
+                <div class="service-info">
+                      <h2> 3D Assets/modelos</h2>
+                      <p>Desarrollo de sitios e interfaces web dinámicas, adaptables y originales.</p>
+                        <div class="service-tech">
+                          <span>Blender</span>
+                          <span>Solidworks</span>
+                        </div>
+                </div>
+            </div>
+        </div>  
+    </section> 
         <section id="proyectos" class="proyects">
             <div class="section-title">
              <h2>Proyectos personales</h2>
@@ -54,18 +119,18 @@
                 <div class="proyect-info">
                       <h3>Ressentiment- Diseño de lata y modelo 3D</h3>
                       <p>Diseño de lata de cerveza [etiqueta e ilustracion] y modelado 3D de mockup + gif animado.</p>
-                      <div class="proyect-tech">
-                        <span>Adobe Illustrator</span>
-                        <span>Blender</span>
-                      </div>
+                        <div class="proyect-tech">
+                          <span>Adobe Illustrator</span>
+                          <span>Blender</span>
+                        </div>
                     <div class="proyect-links">
                         <a href="https://www.behance.net/gallery/245396803/Blender-3D-model-Ressentiment" target="_blank"><i class="fab fa-behance"></i></a>
                     </div>
                 </div>
             </div>
             <div class="proyect-card">
-                <div class="proyect-image">
-                        <img src="img/Lata 1.png" alt="Proyecto 2">
+                <div class="proyect-img">
+                    <img src="img/Lata 1.png" alt="Proyecto 2">
                 </div>
                 <div class="proyect-info">
                     <h3>Proyecto web- Front End</h3>
@@ -81,7 +146,7 @@
                 </div>
             </div>
              <div class="proyect-card">
-                <div class="proyect-image">
+                <div class="proyect-img">
                         <img src="img/Lata 1.png" alt="Proyecto 2">
                 </div>
                 <div class="proyect-info">
@@ -99,16 +164,14 @@
             </div>
         </div>
         </section>
+        <!--html>
         <section id="gallery" class="gallery">
             <div class="section-title">
               <h2>Galeria/concept art</h2>
-              <p> Concept art/illustracion digital- NO IA!</p>
+              <p> Proyectos varios-- NO IA!</p>
             </div> 
             <div class="gallery-container">
-                   <img src="img/Lata 1.png" alt="galeria imagen provisoria">
-                   <img src="img/Lata 1.png" alt="galeria imagen provisoria">
-                   <img src="img/Lata 1.png" alt="galeria imagen provisoria">
-                   <img src="img/Lata 1.png" alt="galeria imagen provisoria">
+                   <img src="img/lata 1.png" alt="galeria imagen provisoria">
                    <img src="img/Lata 1.png" alt="galeria imagen provisoria">
                    <img src="img/Lata 1.png" alt="galeria imagen provisoria">
                    <img src="img/Lata 1.png" alt="galeria imagen provisoria">
@@ -116,7 +179,9 @@
                    <img src="img/Lata 1.png" alt="galeria imagen provisoria">
             </div>
         </section>
-         <section id="experiencia" class="experiencia">
+        </html-->
+  
+    <section id="experiencia" class="experiencia">
         <div class="section-title"> 
              <h2>Experiencia</h2>
         </div>
@@ -152,16 +217,9 @@
  
         </div>
     </section>
-    <section id="contact-me" class="contactame">
-            <div class="section-title">
-             <h3>-Contacto-</h3>
-             <p> detalles sobre tu proyecto</p> 
-            </div>
-        </section>
-    </main> 
 <footer>
    <main> 
-    <section>
+    <section class="footer">
         <div class="footer-content">
             <p>&copy; 2024 CorvusRgb. Todos los derechos reservados.</p>
             <div class="social-links">
@@ -169,8 +227,8 @@
                 <a href="https://github.com/Corvus-rgb" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/corvus-studio/?isSelfProfile=true" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
-    </section>
         </div> 
+    </section>
 </footer>
     </main> 
 </body>
