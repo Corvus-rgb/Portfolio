@@ -14,6 +14,12 @@
 </style>
    
    <body>
+        <div id="loader" class="loader-container">
+            <div class="loader-content">
+                <img src="/img/merged.gif" alt="Cargando..." class="loader-gif">
+                <p class="loader-text">Cargando, por favor espere...</p>
+            </div>
+        </div>
     <header>
         <nav id="navbar">
             <div class="logo"> Corvus<span>Rgb</span></div>
@@ -58,6 +64,23 @@
              <p>// servicios, herramientas de trabajo y competencias//</p>
             </div>
     <section id="servicios" class="servicios">
+        
+        <div class="service-container">
+            <div class="service-card">
+                    <div class="service-img">
+                        <img src="img/Icons/iconos web corvus !.png" alt="icono de servicio 1">
+                    </div>
+                <div class="service-info">
+                      <h2> Diseño Grafico|| UI/UX</h2>
+                      <p>Desarrollo de sitios e interfaces web dinámicas, adaptables y originales.</p>
+                        <div class="service-tech">
+                          <span>FIGMA</span>
+                          <span>Affinity Designer</span>
+                          <span>adobe illustrator</span>
+                        </div>
+                </div>
+            </div>
+        </div> 
         <div class="service-container">
             <div class="service-card">
                     <div class="service-img">
@@ -65,27 +88,12 @@
                     </div>
                 <div class="service-info">
                       <h2> Front-End dev.</h2>
-                      <p>Desarrollo de sitios e interfaces web dinámicas, adaptables y originales.</p>
+                      <p>Desarrollo de sitios e interfaces web dinámicas, adaptables y originales. </p>
                         <div class="service-tech">
                           <span>HTML</span>
                           <span>CSS</span>
                           <span>JavaScript</span>
-                        </div>
-                </div>
-            </div>
-        </div>  
-        <div class="service-container">
-            <div class="service-card">
-                    <div class="service-img">
-                        <img src="img/Icons/iconos web corvus !.png" alt="icono de servicio 1">
-                    </div>
-                <div class="service-info">
-                      <h2> Diseño Grafico</h2>
-                      <p>Desarrollo de sitios e interfaces web dinámicas, adaptables y originales.</p>
-                        <div class="service-tech">
-                          <span>FIGMA</span>
-                          <span>Affinity Designer</span>
-                          <span>UI/UX</span>
+                          <span>React</span>
                         </div>
                 </div>
             </div>
@@ -96,11 +104,12 @@
                         <img src="img/Icons/iconos web corvus word.png" alt="icono de servicio 1">
                     </div>
                 <div class="service-info">
-                      <h2> 3D Assets/modelos</h2>
-                      <p>Desarrollo de sitios e interfaces web dinámicas, adaptables y originales.</p>
+                      <h2> 2D/3D Assets</h2>
+                      <p>Creación de componentes/ilustraciones 2D y 3D para proyectos de diseño.</p>
                         <div class="service-tech">
                           <span>Blender</span>
                           <span>Solidworks</span>
+                            <span>MedibangPaint Pro</span>
                         </div>
                 </div>
             </div>
@@ -114,7 +123,7 @@
         <div class="proyects-container">
             <div class="proyect-card">
                     <div class="proyect-img">
-                        <img src="img/Lata 1.png" alt="Proyecto 1">
+                        <img src="img/krahe present.jpg" alt="Proyecto 1">
                     </div>
                 <div class="proyect-info">
                       <h3>Ressentiment- Diseño de lata y modelo 3D</h3>
@@ -130,15 +139,15 @@
             </div>
             <div class="proyect-card">
                 <div class="proyect-img">
-                    <img src="img/Lata 1.png" alt="Proyecto 2">
+                    <img src="img/proyecto2.jpg" alt="Proyecto 2">
                 </div>
                 <div class="proyect-info">
-                    <h3>Proyecto web- Front End</h3>
+                    <h3>Land Page - Galeria Assets3D</h3>
                     <p>proyecto web personal- por completar (parrafo de descripcion)</p>
                     <div class="proyect-tech">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <span>JavaScript</span>
+                        <span>software CAD (3d models)</span>
                     </div>
                     <div class="proyect-links">
                         <a href= "https://github.com" target="_blank"><i class="fab fa-github"></i></a>
@@ -147,18 +156,19 @@
             </div>
              <div class="proyect-card">
                 <div class="proyect-img">
-                        <img src="img/Lata 1.png" alt="Proyecto 2">
+                        <img src="img/poke api.jpg" alt="Proyecto 2">
                 </div>
                 <div class="proyect-info">
-                    <h3>Proyecto web- Front End</h3>
-                    <p>proyecto web personal- por completar (parrafo de descripcion)</p>
+                    <h3>PokeApi - consumo de API</h3>
+                    <p>Proyecto para Diplomatura como Front-End dev. Aplicación de Gestión de Recursos con API y React (con PokeApi) </p>
                     <div class="proyect-tech">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
+                        <span>React</span>
                     </div>
                     <div class="proyect-links">
-                        <a href= "https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href= "https://github.com/Corvus-rgb/Pokedex--PokeApi" target="_blank"><i class="fab fa-github"></i></a>
                     </div>                        
                 </div>
             </div>
@@ -183,7 +193,7 @@
   
     <section id="experiencia" class="experiencia">
         <div class="section-title"> 
-             <h2>Experiencia</h2>
+             <h2>Estudios/Experiencia</h2>
         </div>
             <div class="timeline">
                     <div class="timeline-item">
@@ -230,5 +240,6 @@
         </div> 
     </section>
 </footer>
-    </main> 
+    </main>
+    <script src="script.js"></script>
 </body>
