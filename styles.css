@@ -423,7 +423,6 @@ section {
 }
 
 .loader-container {
- 
 position: fixed;
   top: 0;
   left: 0;
@@ -491,9 +490,6 @@ position: fixed;
     padding-left: 0;
     scrollbar-width: none
   }
-  .hero::-webkit-scrollbar {
-  display: none;
-}
   .hero-content{
     flex-direction:column;
     border-left:none;
