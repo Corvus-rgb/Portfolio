@@ -423,7 +423,8 @@ section {
 }
 
 .loader-container {
-  position: fixed;
+ 
+position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -434,8 +435,6 @@ section {
   align-items: center;
   z-index: 9999;
   transition: opacity 0.5s ease, visibility 0.5s ease; 
-   overscroll-behavior: none; /* Bloquea el rebote del scroll en móviles */
-  touch-action: none;        /* Evita que los gestos táctiles muevan la pantalla */
   
 }
 
@@ -465,6 +464,7 @@ section {
 .loader-container.hidden {
   opacity: 0;
   visibility: hidden;
+
 }
 
 
@@ -557,6 +557,9 @@ section {
     display: block;
     width: 100%;
   }
+  .loader-content gif {
+    width: 70px; /* Ajusta el tamaño del GIF para móviles */
+  }
 }
 .servicios{
     display: flex;
@@ -618,4 +621,3 @@ section {
   background-color: rgb(7, 15, 85);
   border-radius: 20px;
 }
-
