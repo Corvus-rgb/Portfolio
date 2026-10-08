@@ -211,11 +211,21 @@ section {
     object-fit: cover;
     align-items: flex-start;
     transition: var(--transition);
-    max-width: 400px;
+    max-width: 500px;
 }
 .img-mobile {
   display: none;
   max-width: 150px;
+}
+.hero-buttons {
+    display: inline-flex;
+    gap: 1rem;
+    max-height: 50px;
+}
+.hero-buttons-CV {
+    display: inline-flex;
+    gap: 1rem;
+    max-height: 50px;
 }
 .timeline {
     position: relative;
