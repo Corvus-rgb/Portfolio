@@ -3,14 +3,23 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         const loader = document.getElementById('loader');
         
-        // Aplica el efecto de desaparición suave
+        // efecto de desaparición 
         loader.style.opacity = '0';
         loader.style.transition = 'opacity 0.5s ease';
         
-        // Quita el loader por completo cuando termina la transición
+        // se quita cuando termina la transición
         setTimeout(() => {
             loader.style.display = 'none';
         }, 500);
         
     }, 2000); 
+    //(bloquear el scroll del móvil)
+document.body.style.overflow = 'hidden';
+
+window.addEventListener('load', () => {
+  const loader = document.querySelector('.loader-container');
+  loader.classList.add('hidden');
+  
+  document.body.style.overflow = '';
+});
 });
