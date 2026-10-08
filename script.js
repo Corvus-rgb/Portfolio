@@ -13,13 +13,4 @@ window.addEventListener('load', () => {
         }, 500);
         
     }, 2000); 
-    //(bloquear el scroll del móvil)
-document.body.style.overflow = 'hidden';
-
-window.addEventListener('load', () => {
-  const loader = document.querySelector('.loader-container');
-  loader.classList.add('hidden');
-  
-  document.body.style.overflow = '';
-});
 });

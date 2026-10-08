@@ -478,19 +478,6 @@ section {
     padding:1rem 0;
     gap:1rem;
   }
-  .loader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-     overscroll-behavior: none; 
-    touch-action: none;       
-  }
   .hero{
     flex-direction:column;
     padding-top:2rem;
