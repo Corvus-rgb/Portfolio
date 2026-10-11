@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #525cf1;
+    --primary-color: #00638e;
     --Dark-bg : #161616;
     --Darker-bg : #000000;
     --light-text : #bfd8e3;
@@ -144,7 +144,7 @@ section {
 .hero {
     display: flex;
     align-items: center;
-    padding-top: 6rem;
+    padding-top: 5rem;
     padding-left: 6rem;
     
 }
@@ -177,7 +177,7 @@ section {
     font-weight: 600;
 }
 .hero-text p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--gray-text);
     margin-bottom: 1.5rem;
     max-width: 600px;
@@ -212,7 +212,8 @@ section {
     object-fit: cover;
     align-items: flex-start;
     transition: var(--transition);
-    max-width: 400px;
+    max-width: 300px;
+    margin:70px
 }
 .img-mobile {
   display: none;
@@ -394,7 +395,7 @@ section {
 .proyect-area span {
   font-size: .8rem;
   padding: .3rem 0.8rem;
-  background-color: #161455;
+  background-color: var(--title-bg);
   border-radius: 20px;
 }
 .gallery-container {
@@ -556,7 +557,7 @@ position: fixed;
     width: 180px; /* Ajusta el tamaño del GIF para móviles */
   }
   .loader-container {
-    max-block-size: 100vh; /* Ajusta la altura máxima del loader para móviles */
+    max-block-size: 1000vh; /* Ajusta la altura máxima del loader para móviles */
     align-self: start;
   }
     .loader-gif {
@@ -652,7 +653,7 @@ position: fixed;
     flex-wrap: wrap;
   }
     .nav-links-footer .btn{
-    margin-left: 20rem;
+    margin-left: 18rem;
     margin-top: 1rem;
   }
   .proyects-container {
