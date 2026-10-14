@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #00638e;
-    --Dark-bg : #161616;
+    --primary-color: #2c52bf;
+    --Dark-bg : #1a1e22;
     --Darker-bg : #000000;
-    --light-text : #bfd8e3;
+    --light-text : #b7c3c1;
     --gray-text : #aaaaaa;
-    --card-bg : #141414;
+    --card-bg : #0f1113;
     --border-color : #2d2d2d;
     --transition : all 0.3s ease;
-    --title-bg : #00638e;
+    --title-bg : #225c9a;
 }
 * {
     margin: 0;
@@ -25,7 +25,10 @@ body {
     font-weight: 450;
     font-style: normal;
     width: 100;
-    background-color: var(--Dark-bg);   
+    background-color: var(--Darker-bg);
+    background-image: url(/img/noise\ texture.jpg);
+    background-repeat: repeat;  
+    opacity: 1;
     color: var(--light-text);   
     line-height: 1.6;
 }
@@ -48,7 +51,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: var(--card-bg);
     backdrop-filter: blur(10px);
     z-index: 100;
     border-bottom: 1px solid var(--border-color);
@@ -198,6 +201,7 @@ section {
     font-size: 1.2rem;
     color: var(--light-text);
     transition: var(--transition);
+    border: 1px solid var(--title-bg);
 }
 .social-links a:hover {
     background-color: var(--primary-color);
@@ -588,7 +592,7 @@ position: fixed;
     padding: 10px;
 }
 .service-card {
-    background-color: black;
+    background-color: var(--card-bg);
     border-radius: 10px;
     overflow: hidden;
     transition: var(--transition);
